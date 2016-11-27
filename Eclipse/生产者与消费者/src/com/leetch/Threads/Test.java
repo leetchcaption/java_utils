@@ -1,0 +1,95 @@
+package com.leetch.Threads;
+import java.lang.*; 
+public class Test {
+	public static void main(String args[]){
+		Godown godown = new Godown(30);
+		Consumer c1 = new Consumer(50,godown) ;
+		Consumer c2 = new Consumer(20, godown);
+		Consumer c3 = new Consumer(30, godown);
+		Producer p1 = new Producer(10, godown);
+		Producer p2 = new Producer(10, godown);
+		Producer p3 = new Producer(10, godown);
+		Producer p4 = new Producer(10, godown);
+		Producer p5 = new Producer(10, godown);
+		Producer p6 = new Producer(10, godown);
+		
+		c1.start();
+		c2.start();
+		c3.start();
+		p1.start();
+		p2.start();
+		p3.start();
+		p4.start();
+		p5.start();
+		p6.start();
+	}
+}
+class Godown{
+	public static final int max_size = 100 ;//最大库存量
+	public int curnum ; //当前库存量
+	public Godown() {
+		// TODO 自动生成的构造函数存根
+	}
+	public Godown(int curnum){
+		this.curnum = curnum;
+	}
+	public synchronized void produce(int neednum){ //生产指定数量的产品 
+		while((neednum+curnum)>max_size){//检测是否需要生产
+			System.out.println("要生产的产品数量"+neednum+"超过剩余库存量"+(max_size-curnum)+",暂时不能执行生产任务1");
+			 try{
+				 //当前的生产线程等待
+				 wait();
+			 }catch (InterruptedException e){
+				 e.printStackTrace();
+			 }
+		}
+		//满足生产条件，则进行生产，更改当前库存量
+		curnum += neednum;
+		System.out.println("已经生产了"+neednum+"个产品，现仓储量为"+curnum);
+		//唤醒在此对象监视器上等待的所有线程
+		notifyAll();	
+	}
+	public synchronized void consume(int neednum){
+		while((curnum<neednum)) { //检测是否可以消费
+			try{
+				//当前的生产线程等待
+				wait();
+			}catch(InterruptedException e){
+				e.printStackTrace();
+			}
+		}//满足消费条件，则进行消费，即更改当前库存量
+		curnum -= neednum;
+		System.out.println("已经消费了"+neednum+"个产品，现仓储量为"+curnum);
+		//唤醒在此监视器上等待的所有线程
+		notifyAll();
+	}
+}
+/* 生产者 */
+class Producer extends Thread{
+	private int neednum ;     // 生产产品数量
+	private Godown godown;   //仓库
+	
+	public Producer(int neednum,Godown godown) {
+		// TODO 自动生成的构造函数存根
+		this.neednum = neednum ;
+		this.godown = godown;
+	}
+	public void run(){
+		//生产指定数量的产品
+		godown.produce(neednum);
+	}
+}
+/* 消费者 */
+class Consumer extends Thread{
+	private int neednum ;  // 生产产品数量
+	private Godown godown; //仓库
+	public Consumer(int needrum,Godown godown) {
+		// TODO 自动生成的构造函数存根
+		this.neednum = needrum;
+		this.godown = godown;
+	}
+	public void run(){
+		//消费指定数量的产品
+		godown.consume(neednum);
+	}
+}

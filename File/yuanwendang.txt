@@ -1,0 +1,56 @@
+import java.awt.*;
+
+import javax.swing.*;
+
+import java.awt.event.*;
+public class QQlogin implements ActionListener{
+	public static void main(String arg[]){
+		JFrame f = new JFrame();
+		f.setSize(250,130);
+		//new组件
+		JLabel name = new JLabel("用户名:");
+		JLabel passwd = new JLabel("密码:");
+		JTextField t1 = new JTextField("请输入用户名");
+		JTextField t2 = new JTextField("请输入密码");
+		JPanel input = new JPanel();
+		input.setLayout(new GridLayout(2,2));    //组件input的布局
+		input.add(name);
+		input.add(t1);
+		input.add(passwd);
+		input.add(t2);
+		
+		JButton b1 = new JButton("登录");
+		JButton b2 = new JButton("注册");
+		JButton b3 = new JButton("取消");
+		JPanel button = new JPanel();
+		button.setLayout(new FlowLayout());   //组件button的布局
+		button.add(b1);
+		button.add(b2);
+		button.add(b3);
+		
+		f.setLayout(new BorderLayout());     //窗体的整体布局
+		f.add(input,BorderLayout.CENTER);
+		f.add(button,BorderLayout.SOUTH);
+		
+		//记得注册点击事件
+		QQlogin e = new QQlogin();
+		b1.addActionListener(e);
+		b2.addActionListener(e);
+		b3.addActionListener(e);
+		f.setVisible(true);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO 自动生成的方法存根
+		if(e.getActionCommand().equals("登录")){
+			System.out.println("点击的登录");
+		}
+		if(e.getActionCommand().equals("注册")){
+			System.out.println("点击的注册");
+		}
+		if(e.getActionCommand().equals("取消")){
+			System.out.println("点击的取消");
+		}
+	}
+}

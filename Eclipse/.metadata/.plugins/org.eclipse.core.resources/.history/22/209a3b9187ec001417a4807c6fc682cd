@@ -1,0 +1,34 @@
+import java.io.*;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.Date;
+public class TCPServer {
+	public static void main(String a[]){
+		try {    //服务程序段
+			ServerSocket ss = new ServerSocket(3390);
+			Socket s = ss.accept();//服务器监听
+			System.out.println("正在监听...");
+			OutputStream oStream = s.getOutputStream();  //获得输出流
+			InputStream iStream = s.getInputStream();  // 获得输入流
+			PrintWriter pWriter = new PrintWriter(oStream); //调用输入输出流的read（）或write（）方法，进行数据的传输
+			pWriter.print("now date is"+new Date());  //传输的内容
+			pWriter.flush();    //及时刷新缓冲区
+			pWriter.close();   //关闭输出流和socket
+			s.close();
+			ss.close();
+			} catch (IOException e) {
+			e.printStackTrace();
+		}
+		try{      //客户程序段
+			Socket s1 = new Socket("localhost",8090);   //用IP地址和端口号创建socket对象
+			InputStream inputStream =s1.getInputStream(); //获得输入流
+			InputStreamReader inputStreamReader =new InputStreamReader(inputStream); //创建bufferread对象
+			BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+			String string = bufferedReader.readLine();
+			System.out.println(string);
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+
+}

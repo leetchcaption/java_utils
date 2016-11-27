@@ -1,0 +1,36 @@
+[符号]			[符号类型信息]
+
+0			Num
+d			KeyWord or Type
+1			Num
+0			Num
+j			KeyWord or Type
+main			id
+scanf			KeyWord or Type
+0			Num
+0			Num
+0			Num
+stdio			id
+yanghui			KeyWord or Type
+for			KeyWord or Type
+if			KeyWord or Type
+k			id
+EOF			id
+1			Num
+else			KeyWord or Type
+m			KeyWord or Type
+int			KeyWord or Type
+n			KeyWord or Type
+y			KeyWord or Type
+1			Num
+printf			KeyWord or Type
+return			KeyWord or Type
+h			KeyWord or Type
+stdlib			id
+include			KeyWord or Type
+i			KeyWord or Type
+1			Num
+0			Num
+1			Num
+while			KeyWord or Type
+x			KeyWord or Type

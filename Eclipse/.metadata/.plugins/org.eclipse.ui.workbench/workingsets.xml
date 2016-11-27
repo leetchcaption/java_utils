@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1420522751095_1" label="Java-workspace" name="Java-workspace">
+<item elementID="=LiangQiuZhuangQiang" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=WriteFile" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Hello" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=QQlogin" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=FlyGreatSnow" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=QQLogin_new" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=ReadFile" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=词法扫描程序_2" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=XiaoQiuWall" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=FlyingBoll" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=椭圆的扫描转换" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=词法扫描程序_3\(简版)" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Wugui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=中点画线法" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=打字母游戏_测试版" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=键盘控制小球" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=区域填充算法" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=词法扫描程序" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=第三章__获得逻辑能力" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Key" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=鼠标控制小球_测试版" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=LinkedList的用法" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=爬动的乌龟" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=打字母游戏" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/helloworld" type="4"/>
+<item elementID="=区域填充__CB算法" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=MySocket" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=词法扫描程序_1" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=按钮" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=MyTest" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Aprorio" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=NFA_DFA" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Bezier曲线" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=StarSky" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=聊天工具_测试版" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=飘落的字母" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1412251122965_0" label="窗口工作集" name="Aggregate for window 1412251122965"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1423192415802_2" label="窗口工作集" name="Aggregate for window 1423192415802"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1423826008659_3" label="窗口工作集" name="Aggregate for window 1423826008659"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1424847835906_4" label="窗口工作集" name="Aggregate for window 1424847835906"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1425946724819_5" label="窗口工作集" name="Aggregate for window 1425946724819"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1426124958989_6" label="窗口工作集" name="Aggregate for window 1426124958989"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1426987675617_7" label="窗口工作集" name="Aggregate for window 1426987675617"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1427420320226_8" label="窗口工作集" name="Aggregate for window 1427420320226"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1427422090729_9" label="窗口工作集" name="Aggregate for window 1427422090729"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1427423391836_10" label="窗口工作集" name="Aggregate for window 1427423391836"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1427504829828_11" label="窗口工作集" name="Aggregate for window 1427504829828"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1427510019618_12" label="窗口工作集" name="Aggregate for window 1427510019618"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1427619944011_13" label="窗口工作集" name="Aggregate for window 1427619944011"/>
+</workingSetManager>

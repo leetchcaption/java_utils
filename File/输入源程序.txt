@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<malloc.h>
+struct stud{
+	int num;
+	char name[21];
+	char sex;
+	int age; 
+};
+int  main()
+{  
+	int n,i;
+	scanf("%d",&n);
+		struct stud *s;
+	s=( struct stud*)malloc(sizeof(stud)*n);
+for(i=0;i<n;i++)
+	scanf("%d %s %c %d",&s[i].num,s[i].name,&s[i].sex,&s[i].age);
+int m,k=0;
+scanf("%d",&m);
+	for(i=0;i<n;i++)
+		if(s[i].age==m)
+			k++;
+	printf("%d\n",n-k);
+	for(i=0;i<n;i++)
+		if(s[i].age!=m)
+	printf("%d %s %c %d\n",s[i].num,s[i].name,s[i].sex,s[i].age);
+return 0;
+}
+
+
+

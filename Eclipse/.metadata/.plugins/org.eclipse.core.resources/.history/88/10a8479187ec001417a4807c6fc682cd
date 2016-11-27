@@ -1,0 +1,39 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.PrintWriter;
+import java.net.*;
+import java.util.Date;
+public class TCPclient {
+	public static void main(String arg[]){
+		try {     //客户端程序
+			Socket s = new Socket("localhost",3390);   //用IP地址和端口号创建socket对象
+			InputStream inputStream =s.getInputStream(); //获得输入流
+			InputStreamReader inputStreamReader =new InputStreamReader(inputStream); //创建bufferread对象
+			BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+			String string = bufferedReader.readLine();
+			System.out.println(string);			
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		try {      //服务端程序
+			ServerSocket ss1 = new ServerSocket(3390);
+			Socket s1 = ss1.accept();//服务器监听
+			System.out.println("正在监听...");
+			OutputStream oStream = s1.getOutputStream();  //获得输出流
+			InputStream iStream = s1.getInputStream();  // 获得输入流
+			PrintWriter pWriter = new PrintWriter(oStream); //调用输入输出流的read（）或write（）方法，进行数据的传输
+			pWriter.print("now date is"+new Date()+"这是客户端...");  //传输的内容
+			pWriter.flush();    //及时刷新缓冲区
+			pWriter.close();   //关闭输出流和socket
+			s1.close();
+			ss1.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}
