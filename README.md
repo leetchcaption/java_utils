@@ -1,2 +1,1 @@
-# mycode
-学习java过程中写的小工具~~~
+the code which study coding from 2012 and end at 2016.
